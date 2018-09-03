@@ -4,6 +4,17 @@
     ],
     "plugins": [
         "transform-object-rest-spread",
-        "transform-class-properties"
+        "transform-class-properties",
+        [
+            "babel-plugin-stack-trace-sourcemap",
+            {
+                "importOverride": [
+                    "source-map-support",
+                    "install",
+                    "_sourceMapSupport"
+                ],
+                "execute": true
+            }
+        ]
     ]
 }
